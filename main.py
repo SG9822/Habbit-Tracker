@@ -9,6 +9,7 @@ GRAPH_ID = "{ Create Your Graph Id}"
 
 pixela_endpoint = "https://pixe.la/v1/users"
 
+# For Creating the user profile in pixela
 user_params = {
     "token": TOKEN,
     "username": USERNAME,
@@ -19,6 +20,7 @@ user_params = {
 # response = requests.post(url=pixela_endpoint, json=user_params)
 # print(response.text)
 
+# For Creating the Graph
 graph_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs"
 
 graph_config = {
@@ -36,6 +38,8 @@ headers = {
 # response = requests.post(url=graph_endpoint, json=graph_config, headers=headers)
 # print(response.text)
 
+
+# For Creating The pixels
 pixel_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs/{GRAPH_ID}"
 
 today = datetime.now()
